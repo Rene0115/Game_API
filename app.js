@@ -13,6 +13,7 @@ app.use(cors());
 const router = express.Router();
 
 router.post("/users", async (req, res) => {
+    console.log(req.body)
   const data = {
     username: req.body.username,
     coins: req.body.coins,
