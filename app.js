@@ -19,7 +19,7 @@ router.post("/users", async (req, res) => {
   };
   const user = await userModel.create(data);
   return res.status(201).send({
-    sucsess: true,
+    success: true,
     data: user,
   });
 });
